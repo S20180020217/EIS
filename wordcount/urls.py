@@ -17,7 +17,7 @@ from django.urls import path
 from django.http import HttpResponse
 from . import view
 urlpatterns = [
-    path('form/',view.form ),
+    path('',view.home ),
     path('count/',view.count),
     path('about/',view.about)
 ]

@@ -13,6 +13,8 @@ Config = {
   }
 firebase= pyrebase.initialize_app(Config)
 auth=firebase.auth()
+def home(request):
+  return render(request,'a.html')
 def form(request):
 	return render(request,'formaction.html')
 def count(request):
